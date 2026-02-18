@@ -36,7 +36,7 @@ async function getTeamData(coachId: string) {
 const PlayerCard: React.FC<{ player: any }> = ({ player }) => {
     // Lógica de Alertas
     const lastCheckin = player.checkins?.[0];
-    let alert = null;
+    let alert: { type: string; message: string; } | null = null;
     if (!lastCheckin) {
         alert = { type: '🔴', message: 'Sin check-ins registrados.' };
     } else {
