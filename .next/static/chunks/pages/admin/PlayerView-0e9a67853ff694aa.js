@@ -1,1 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[928],{65699:function(n,u,t){(window.__NEXT_P=window.__NEXT_P||[]).push(["/admin/PlayerView",function(){return t(77577)}])},77577:function(n,u,t){"use strict";function e(){return null}t.r(u),t.d(u,{default:function(){return e}}),t(67294)}},function(n){n.O(0,[2888,9774,179],function(){return n(n.s=65699)}),_N_E=n.O()}]);

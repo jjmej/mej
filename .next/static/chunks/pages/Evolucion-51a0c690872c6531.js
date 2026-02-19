@@ -1,1 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[7134],{49942:function(n,u,t){(window.__NEXT_P=window.__NEXT_P||[]).push(["/Evolucion",function(){return t(44171)}])},44171:function(n,u,t){"use strict";function _(){return null}t.r(u),t.d(u,{default:function(){return _}}),t(67294)}},function(n){n.O(0,[2888,9774,179],function(){return n(n.s=49942)}),_N_E=n.O()}]);

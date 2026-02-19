@@ -13,7 +13,7 @@ export default function ConcentracionPage() {
       <p>
         La concentración es clave para cualquier deportista. Aquí aprenderás técnicas para mantener el foco durante los entrenamientos y las competiciones, ignorando las distracciones.
       </p>
-      <button className="w-full bg-brand-blue hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg text-lg transition-colors">
+      <button className="btn-primary">
         Iniciar Ejercicio de Foco
       </button>
     </ModulePageLayout>

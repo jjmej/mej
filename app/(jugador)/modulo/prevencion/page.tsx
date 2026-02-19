@@ -17,7 +17,7 @@ export default function PrevencionScreeningPage() {
       <p className="text-sm text-slate-400">
         Contesta con honestidad. No hay respuestas correctas o incorrectas.
       </p>
-      <Link href="#" className="block text-center w-full bg-brand-yellow hover:bg-yellow-600 text-dark-bg font-bold py-3 px-4 rounded-lg text-lg transition-colors">
+      <Link href="#" className="btn-warning block text-center">
         Comenzar Cuestionario
       </Link>
     </ModulePageLayout>

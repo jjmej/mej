@@ -105,7 +105,7 @@ export default function CheckInPage() {
 
         {error && <p className="text-red-500 text-center">{error}</p>}
 
-        <button type="submit" disabled={loading} className="w-full bg-brand-green hover:bg-green-700 text-white font-bold py-3 px-4 rounded-lg text-lg sm:text-xl transition-colors disabled:opacity-50">
+        <button type="submit" disabled={loading} className="btn-success">
           {loading ? 'Guardando...' : 'Guardar Check-in'}
         </button>
       </form>

@@ -46,7 +46,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({ action }) => {
             
             {error && <p className="text-red-500 text-sm">{error}</p>}
             
-            <button type="submit" className="w-full bg-brand-blue hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg text-lg sm:text-xl transition-colors !mt-6">
+            <button type="submit" className="btn-primary !mt-6">
                 Crear cuenta
             </button>
         </form>

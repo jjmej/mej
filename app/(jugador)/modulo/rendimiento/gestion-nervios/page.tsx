@@ -13,7 +13,7 @@ export default function GestionNerviosPage() {
       <p>
         Los nervios antes de una competición son normales, ¡incluso buenos! El truco está en saber controlarlos. Descubre ejercicios de respiración y mentalización para transformar la ansiedad en energía.
       </p>
-       <button className="w-full bg-brand-blue hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg text-lg transition-colors">
+       <button className="btn-primary">
         Practicar Respiración Controlada
       </button>
     </ModulePageLayout>

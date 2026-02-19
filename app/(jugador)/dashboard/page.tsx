@@ -62,7 +62,7 @@ export default async function DashboardPage() {
               </div>
           )}
 
-          <Link href="/checkin" className="block w-full text-center bg-brand-green hover:bg-green-700 text-white font-bold py-4 px-4 rounded-lg text-lg transition-colors shadow-lg">
+          <Link href="/checkin" className="btn-success block text-center shadow-lg">
             CHECK-IN DIARIO
           </Link>
 
