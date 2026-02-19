@@ -3,6 +3,7 @@ import React from 'react';
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { UserProvider } from '@/context/UserContext';
 
 const poppins = Poppins({ 
   subsets: ["latin"],
@@ -21,7 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        <UserProvider>
+          {children}
+        </UserProvider>
+      </body>
     </html>
   );
 }
