@@ -1,8 +1,6 @@
 
-
 'use client';
-// FIX: Add PropsWithChildren to imports
-import React, { createContext, useContext, useState, useEffect, type PropsWithChildren } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 import { createClient } from '@/lib/supabase/client';
 import type { Profile } from '@/types';
 
@@ -13,8 +11,7 @@ interface UserContextType {
 
 const UserContext = createContext<UserContextType | undefined>(undefined);
 
-// FIX: Change prop typing to use React.PropsWithChildren to resolve type error in layout.tsx.
-export const UserProvider = ({ children }: PropsWithChildren) => {
+export const UserProvider = ({ children }: { children: React.ReactNode }) => {
   const supabase = createClient();
   const [profile, setProfile] = useState<Profile | null>(null);
   const [loading, setLoading] = useState(true);

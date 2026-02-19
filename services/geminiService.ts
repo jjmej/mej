@@ -1,19 +1,21 @@
 
-
 'use server';
 
 import { GoogleGenAI } from '@google/genai';
 
+// Solo inicializar si la clave API existe.
+let ai: GoogleGenAI | null = null;
+if (process.env.GEMINI_API_KEY) {
+  ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+} else {
+  console.warn("GEMINI_API_KEY environment variable not set. AI features will be disabled.");
+}
+
 export async function getSimpleTextResponse(prompt: string): Promise<string> {
-  // FIX: Per coding guidelines, API key must be obtained from process.env.API_KEY.
-  if (!process.env.API_KEY) {
-    console.warn("API_KEY environment variable not set. AI features will be disabled.");
+  if (!ai) {
     return "El servicio de IA no está configurado correctamente.";
   }
   
-  // FIX: Initialize GoogleGenAI inside the function to align with guidelines.
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-
   try {
     const response = await ai.models.generateContent({
       model: 'gemini-3-flash-preview',
