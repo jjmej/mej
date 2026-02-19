@@ -40,17 +40,21 @@ export default async function LoginPage({ searchParams }: { searchParams: { mess
             <form action={login} className="w-full space-y-4">
                 <label className="sr-only" htmlFor="email">Email</label>
                 <input
+                    id="email"
                     className="w-full bg-dark-card border border-slate-600 text-white rounded-lg p-3 text-center text-base sm:text-lg"
                     name="email"
                     placeholder="email@ejemplo.com"
+                    autoComplete="email"
                     required
                 />
                 <label className="sr-only" htmlFor="password">Contraseña</label>
                 <input
+                    id="password"
                     className="w-full bg-dark-card border border-slate-600 text-white rounded-lg p-3 text-center text-base sm:text-lg"
                     type="password"
                     name="password"
                     placeholder="••••••••"
+                    autoComplete="current-password"
                     required
                 />
                 <button type="submit" className="btn-primary !mt-6">
