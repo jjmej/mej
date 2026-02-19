@@ -26,8 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
-      <body className={poppins.className}>
+    <html lang="es" className="h-full bg-dark-bg">
+      <body className={`${poppins.className} h-full text-dark-text antialiased`}>
         <UserProvider>
           {children}
         </UserProvider>
