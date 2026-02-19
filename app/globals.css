@@ -3,6 +3,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    height: 100%;
+    background-color: theme('colors.dark-bg');
+    /* Prevent font scaling on mobile devices, which causes disproportionate layouts */
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    height: 100%;
+    font-family: theme('fontFamily.sans');
+    color: theme('colors.dark-text');
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
 @layer components {
   .btn {
     @apply w-full font-bold py-3 px-4 rounded-lg text-lg sm:text-xl transition-colors disabled:opacity-50;
